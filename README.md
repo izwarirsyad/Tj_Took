@@ -37,3 +37,35 @@ TalkHub 专注于：**稳定性、简洁配置、私有化、安全性**。
 git clone https://github.com/你的GitHub用户名/TalkHub.git
 cd TalkHub
 
+### 2. 安装依赖
+```bash
+pip install -r requirements.txt
+
+### 3. 配置环境变量
+
+在项目根目录创建 .env 文件：
+BOT_TOKEN=你的TelegramBot令牌
+OWNER_ID=你的Telegram用户ID
+
+### 4. 启动服务
+```bash
+python bot.py
+
+运行后，你的 TalkHub Bot 即可开始工作。
+### 5.📁 目录结构（示例）
+```bash
+TalkHub/
+│── bot.py                # 主程序入口
+│── config.py             # 配置文件
+│── handlers/             # 消息处理模块
+│── utils/                # 工具方法
+│── plugins/              # 自定义插件目录（可选）
+│── requirements.txt
+│── README.md
+
+### 6.启动：
+```bash
+systemctl enable talkhub
+systemctl start talkhub
+
+
